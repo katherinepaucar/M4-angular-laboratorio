@@ -1,0 +1,4 @@
+<div class="menu-container">
+    <app-public-menu *ngIf="!isLogged"></app-public-menu>
+    <app-private-menu *ngIf="isLogged"></app-private-menu>
+</div>

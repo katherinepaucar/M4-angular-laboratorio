@@ -1,0 +1,30 @@
+
+<div class="container">
+  <div class="data">
+    <p><b>Usuario: </b>master&#64;lemoncode.net</p>
+    <p><b>Contraseña: </b>12345678</p>
+  </div>
+
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()" class="form-container">
+    <mat-form-field>
+        <mat-label>Usuario</mat-label>
+      <input type="text" matInput formControlName="userName">
+      <mat-error *ngIf="myForm.get('userName')?.errors">
+        <span *ngIf="myForm.get('userName')?.errors?.['required']">Debes indicar el usuario</span>
+        <span *ngIf="myForm.get('userName')?.errors?.['minlength']">Debes como mínimo 5 caracteres</span>
+        <span *ngIf="myForm.get('userName')?.errors?.['pattern']">Usuario no válido</span>
+      </mat-error>
+    </mat-form-field>
+  
+    <mat-form-field>
+        <mat-label>Contraseña</mat-label>
+      <input type="password" matInput formControlName="password" />
+      <mat-error *ngIf="myForm.get('password')?.errors">
+        <span *ngIf="myForm.get('password')?.errors?.['required']">Debes indicar la contraseña</span>
+        <span *ngIf="myForm.get('password')?.errors?.['minlength']">Debes como mínimo 5 caracteres</span>
+        <span *ngIf="myForm.get('password')?.errors?.['pattern']">Contraseña no válida</span>
+      </mat-error>
+    </mat-form-field>
+    <button type="submit"  mat-raised-button color="primary">Enviar</button>
+    </form>
+  </div>

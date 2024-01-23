@@ -1,0 +1,19 @@
+<div class="header-container">
+    <div class="header-content">
+        <div class="title">
+            <h1>Mi web</h1>
+        </div>
+        <div class="actions" *ngIf="isLogged && user ">
+            <span class="material-symbols-outlined"> account_circle </span>
+            <span> {{ user }}</span>            
+            <button mat-raised-button (click)="logout()"><span class="material-symbols-outlined"> logout </span> </button>
+        </div>
+  
+
+    </div>
+
+  
+
+    <app-menu></app-menu>
+</div>
+
