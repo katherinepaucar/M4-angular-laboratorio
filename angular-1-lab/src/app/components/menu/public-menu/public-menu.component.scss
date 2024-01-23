@@ -1,0 +1,42 @@
+.menu-public{
+  width: 80vw;
+}
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #0E2954;
+  border: 1px solid white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+li {    
+  width: 200px;
+  text-align: center;
+  a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px;
+      text-decoration: none;
+    }
+    a:hover{
+      background-color: #1e5aba;
+      border-radius: 1px;
+    }
+    a:visited {
+      color: white;
+    }
+    
+}
+
+
+.active-link{
+  color: #0E2954;
+  border-bottom: 4px solid #679cf0;
+  // background-color: #679cf0;
+}

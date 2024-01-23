@@ -1,0 +1,31 @@
+.header-content{
+    width: 80vw;
+    background-color: #0E2954;
+    color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .title {
+         display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 14px;
+   
+    }
+
+    .actions{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        > span{
+            padding: 2px;
+        }
+        button{
+            margin-left: 4px ;
+            margin-right: 14px;
+        }
+
+    }
+
+}
